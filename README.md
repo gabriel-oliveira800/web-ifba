@@ -45,6 +45,13 @@
 </p>
 
 
+## Exercívio 01
+<p>
+    <img  
+        align="center" height="400px" " 
+        src="./exercicio_02/demo.gif" alt="Demo"
+    >
+</p>
 
 <br>
 
