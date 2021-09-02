@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+        A tag link define a relação entre o documento atual e um recurso externo, é mas 
+        frequentemente utilizado para vincular o arquivo de estilo ao HTML.
+     -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Exercício 02</title>
+</head>
+
+<body>
+     <!-- 
+        A tag link define uma divisão ou seção em um documento HTML, o mesmo 
+        é usada como um contêiner para elementos HTML, que são estilizados com 
+        CSS ou manipulados com JavaScript. Qualquer tipo de conteúdo pode ser 
+        colocado dentro da <div> tag.
+     -->
+    <div class="todo-list-container">
+        <div class="todo-list-header">
+             <!-- 
+               As tags <h1>to <h6>são usadas para definir cabeçalhos HTML.
+               <h1>define o título mais importante, e <h6> define o título menos importante.
+            -->
+            <h1 class="todo-list-title">Tarefas</h1>
+
+            <div class="todo-list-input">
+                <!-- 
+                    A tag <input> especifica um campo de entrada onde o usuário pode inserir dados.
+                    O <input>elemento é o elemento de formulário mais importante. O <input>elemento 
+                    pode ser exibido de várias maneiras, dependendo do atributo type.
+                 -->
+                <input 
+                    type="input" 
+                    class="form__field" 
+                    id="insert-todo-list"
+                    placeholder="Adicione uma tarefa" 
+                    name="name" id='name' required 
+                />                
+            </div>
+
+            <!-- 
+                A <button> tag define um botão clicável. Dentro de um <button>elemento que pode colocar o 
+                texto (e tags como <i>, <b>, <strong>, <br>, <img>, etc.). Isso não é possível com um botão 
+                criado com o <input> elemento. É ideal sempre especifique o type atributo para um <button> elemento, 
+                para dizer aos navegadores que tipo de botão ele é.
+             -->
+            <button type="button" id="add-new-item" class="todo-list-button">Criar</button>
+
+        </div>
+
+        <!-- 
+          A <ul>tag define uma lista não ordenada (com marcadores), mas pode-se usar a tag <ol> , para listas ordenadas.
+          É possivél usar o CSS para estilizar listas
+         -->
+        <ul class="all-todo-list" id="all_todo_list">
+            <!-- 
+            A <li> tag define um item da lista. A mesma é usada em listas ordenadas ( <ol> ), listas não ordenadas 
+            ( <ul> ) e em listas de menu ( <menu> ). Em <ul> e <menu>, os itens da lista geralmente serão exibidos 
+            com marcadores.
+             -->
+            <li class="all-todo-list-item">
+                <input type="checkbox">
+
+                <!-- 
+                    A <span>tag é um contêiner embutido usado para marcar uma parte de um texto ou uma parte de um documento.
+                    A <span>tag é facilmente estilizada por CSS ou manipulada com JavaScript usando o atributo class ou id.
+                    A <span>tag é muito parecida com o elemento <div> , mas <div> é um elemento de nível de bloco e <span>é 
+                    um elemento embutido.
+                 -->
+                <span>Estudar HTML e CSS</span>
+            </li>
+        </ul>
+
+        
+        <footer>
+            Exemplo básico de uma aplicação de tarefas a realizar
+        </footer>
+
+    </div>
+
+    <!-- 
+        A <script>tag é usada para incorporar um script do lado do cliente (JavaScript).
+        O <script>elemento contém instruções de script ou aponta para um arquivo de script externo por meio do atributo src.
+        Os usos comuns do JavaScript são manipulação de imagens, validação de formulários e mudanças dinâmicas de conteúdo.
+     -->
+    <script src="todo_list.js"></script>
+</body>
+
+</html>
