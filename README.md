@@ -17,25 +17,33 @@
 
 ## Tecnologias 
 <br>
-<p>
+
+<div>
     <img  align="center" height="50px" width="50px" 
     src="https://cdn.svgporn.com/logos/html-5.svg"
     alt="Html"
     >
-</p>
-
-<p>
     <img  align="center" height="50px" width="50px" 
     src="https://cdn.svgporn.com/logos/css-3.svg"
     alt="CSS"
     >
-</p>
-<p>
-    <img  align="center" height="50px" width="50px" 
+  <img  align="center" height="50px" width="50px" 
     src="https://cdn.svgporn.com/logos/javascript.svg"
     alt="JavaScript"
     >
+</div>
+
+
+<br>
+
+## Exercívio 01
+<p>
+    <img  
+        align="center" height="400px" " 
+        src="./exercicio_01/demo.gif" alt="Demo"
+    >
 </p>
+
 
 
 <br>
