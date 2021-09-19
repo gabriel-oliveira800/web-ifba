@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    list-style: none;
+    
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+
+    background: url('https://source.unsplash.com/random') no-repeat;
+    background-size: cover;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 600px;
+    height: 85vh;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    border-radius: 18px;
+    background-color: #ffff;
+
+    padding: 48px 38px;
+}
+
+.content-email {
+    padding-top: 8px;
+}
+
+.content-type {
+    width: 100%;
+
+    padding-top: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.content-type label {
+    padding-right: 10px;
+}
+
+.content-type .type-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding-top: 8px;
+}
+
+.content-type li label{
+    padding-left: 4px;
+}
+
+.decription label {
+    padding-bottom: 8px;
+}
+
+.decription text {
+    min-height: 200px;
+}
+
+#finish-button {
+    width: 100%;
+    height: 48px;
+
+    margin-top: 48px;
+
+    border: none;
+    background-color: rgb(53, 211, 74);
+
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}

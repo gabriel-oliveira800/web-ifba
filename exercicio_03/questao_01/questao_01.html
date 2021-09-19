@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Exercício 03</title>
+</head>
+
+<body>
+    <form class='content' method="post">
+        <fieldset class="user-information">
+            <legend> Dados do Alunos </legend>
+
+            <div class="user-name">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+
+            <div class="user-age">
+                <label id='age' for="age" class="form-label">Idade</label>
+                <input type="number" class="form-control" id="age" max="100" required>
+            </div>
+
+        </fieldset>
+
+        <fieldset class="occupation-area">
+            <legend> Área de Atuação </legend>
+
+            <div class="development-area">
+                <label for="development" class="form-label">Programação</label>
+                <select class="form-select">
+                    <option selected>Selecionar</option>
+                    <option value="Front-End">Front-End</option>
+                    <option value="Back-End">Back-End</option>
+                    <option value="Full-Stack">Full-Stack</option>
+                </select>
+            </div>
+
+            <div class="destination-area">
+                <label for="destination" class="form-label">Portfólio de Atuação</label>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="false">
+                    <label class="form-check-label" for="Comercial">Comercial</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="false">
+                    <label class="form-check-label" for="Institucional">Institucional</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="false">
+                    <label class="form-check-label" for="Blog">Blog</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="false">
+                    <label class="form-check-label" for="Wiki">Wiki</label>
+                </div>
+
+            </div>
+
+        </fieldset>
+
+        <div class="col-12">
+            <button id="finish-button" class="btn btn-primary" type="submit">Finalizar</button>
+        </div>
+
+    </form>
+</body>
+
+</html>

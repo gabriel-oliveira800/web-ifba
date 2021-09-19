@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Exercício 03</title>
+</head>
+
+<body>
+    <form class='content' method="post">
+        <div class="content-name">
+            <label for="name" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+
+        <div class="content-email">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="name" required>
+        </div>
+
+        <div class="content-type">
+            <label for="type" class="form-label">Tipo</label>
+            <ul class="type-buttons">
+                <li>
+                    <input class="form-check-input" type="radio" value="false">
+                    <label class="form-check-label" for="Técnico">Técnico</label>
+                </li>
+                <li>
+                    <input class="form-check-input" type="radio" value="false">
+                    <label class="form-check-label" for="Professor">Professor</label>
+                </li>
+                <li>
+                    <input class="form-check-input" type="radio" value="false">
+                    <label class="form-check-label" for="Aluno">Aluno</label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content-type">
+            <label for="type" class="form-label">Setor de Interesse</label>
+            <ul class="type-buttons">
+                <li>
+                    <input class="form-check-input" type="checkbox" value="false">
+                    <label class="form-check-label" for="Financeiro">Financeiro</label>
+                </li>
+                <li>
+                    <input class="form-check-input" type="checkbox" value="false">
+                    <label class="form-check-label" for="Informática">Informática</label>
+                </li>
+                <li>
+                    <input class="form-check-input" type="checkbox" value="false">
+                    <label class="form-check-label" for="RH">RH</label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="decription">
+            <label for="solicitação">Solicitação</label>
+            <textarea class="form-control" placeholder="Escreva aqui sua solicitação" ></textarea>
+        </div>
+
+
+
+        <button id="finish-button" class="btn btn-primary" type="submit">Enviar</button>
+
+    </form>
+</body>
+
+</html>

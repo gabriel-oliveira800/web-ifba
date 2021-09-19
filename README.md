@@ -53,6 +53,13 @@
     >
 </p>
 
+
+## Exercívio 03 -  Questão 01 
+| Questões    |
+|-------------|
+| <img align="center" height="200px" src="./exercicio_03/questao_01/demo.png" alt="Demo">| 
+| <img align="center" height="200px" src="./exercicio_03/questao_02/demo.png" alt="Demo">| 
+
 <br>
 
 ## Contatos 
@@ -61,4 +68,4 @@
 
 <br>
 
-Obrigado por visitar, já que está aqui, mim segue para compartilhar experiencias. 
+Obrigado por visitar, já que está aqui, me segue para compartilhar experiencias. 
