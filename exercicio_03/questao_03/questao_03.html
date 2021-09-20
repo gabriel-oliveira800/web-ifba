@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>Exercício 03</title>
+</head>
+
+<body>
+    <main>
+        <form class='content' method="post">
+            <fieldset>
+                <legend>Cadastro Geral</legend>
+
+                <div class="user-fields">
+                    <fieldset>
+                        <legend>Dados pessoais</legend>
+                        <div id="user-fields-name" class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+
+                        <div id="user-fields-select" class="form-group">
+                            <label for="profissão" class="form-label">Profissão</label>
+                            <select class="form-select" required>
+                                <option selected>Sua Profissão</option>
+                                <option value="Front-End">Front-End</option>
+                                <option value="Back-End">Back-End</option>
+                                <option value="Full-Stack">Full-Stack</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Localização</legend>
+
+                        <div id="user-fields-email" class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+
+                        <div id="user-fields-street" class="form-group">
+                            <label for="rua">Rua</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="age-group">
+                    <fieldset>
+                        <legend>Faixa etária</legend>
+                        <ul class="age-group-list">
+                            <li class="age-group-list-item">
+                                <div class="form-group">
+                                    <input class="form-check-input" type="radio" value="false">
+                                    <label class="form-check-label" for="até 20 anos">até 20 anos</label>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-check-input" type="radio" value="false">
+                                    <label class="form-check-label" for="mais de 20 até 30 anos">mais de 20 até 30
+                                        anos</label>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-check-input" type="radio" value="false">
+                                    <label class="form-check-label" for="mais de 30 até 40 anos">mais de 30 até 40
+                                        anos</label>
+                                </div>
+                            </li>
+
+                            <li class="age-group-list-item">
+                                <div class="form-group">
+                                    <input class="form-check-input" type="radio" value="false">
+                                    <label class="form-check-label" for="mais de 40 até 50">mais de 40 até 50</label>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-check-input" type="radio" value="false">
+                                    <label class="form-check-label" for="mais de 50 até 60 anos">mais de 50 até 60
+                                        anos</label>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-check-input" type="radio" value="false">
+                                    <label class="form-check-label" for="mais 60">mais 60</label>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </fieldset>
+                </div>
+
+
+                <div class="sports-fields">
+                    <fieldset>
+                        <legend>Esportes que prática</legend>
+                        <ul class="sports-fields-list">
+                            <li>
+                                <input class="form-check-input" type="checkbox" value="false">
+                                <label class="form-check-label" for="Futebol de campo">Futebol de campo</label>
+                            </li>
+                            <li>
+                                <input class="form-check-input" type="checkbox" value="false">
+                                <label class="form-check-label" for="Futebol de salão">Futebol de salão</label>
+                            </li>
+                            <li>
+                                <input class="form-check-input" type="checkbox" value="false">
+                                <label class="form-check-label" for="Futebol de society">Futebol de society</label>
+                            </li>
+                            <li>
+                                <input class="form-check-input" type="checkbox" value="false">
+                                <label class="form-check-label" for="Voley de quadra">Voley de quadra</label>
+                            </li>
+                            <li>
+                                <input class="form-check-input" type="checkbox" value="false">
+                                <label class="form-check-label" for="Voley de praia">Voley de praia</label>
+                            </li>
+                            <li>
+                                <input class="form-check-input" type="checkbox" value="false">
+                                <label class="form-check-label" for="Natação de piscina">Natação de piscina</label>
+                            </li>
+                            <li>
+                                <input class="form-check-input" type="checkbox" value="false">
+                                <label class="form-check-label" for="Natação em mar aberto">Natação em mar
+                                    aberto</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+
+            </fieldset>
+
+            <fieldset id="comments">
+                <legend>Comentário</legend>
+                <div class="form-group">
+                    <label class="form-check-label" for="mensagem">Mensagem:</label>
+                    <textarea class="form-control" placeholder="Escreva aqui seu comentário"></textarea>
+                </div>
+               
+            </fieldset>
+
+            <div class="actions-buttons">
+                <button type="submit" id="send-data" class="btn btn-primary">Enviar</button>
+
+                <button type="reset" id="clean-data" class="btn btn-outline-primary">Limpar</button>
+            </div>
+
+        </form>
+    </main>
+</body>
+
+</html>
