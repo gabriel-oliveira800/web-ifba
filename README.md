@@ -45,7 +45,7 @@
 </p>
 
 
-## Exercívio 01
+## Exercívio 02
 <p>
     <img  
         align="center" height="400px" " 
@@ -54,11 +54,20 @@
 </p>
 
 
-## Exercívio 03 -  Questão 01 
+## Exercívio 03 -  Questão de 01 a 03 
 | Questões    |
 |-------------|
 | <img align="center" height="200px" src="./exercicio_03/questao_01/demo.png" alt="Demo">| 
 | <img align="center" height="200px" src="./exercicio_03/questao_02/demo.png" alt="Demo">| 
+
+## Exercívio 05
+<p>
+    <img  
+        align="center" height="400px" " 
+        src="./exercicio_05/demo.png" alt="Demo"
+    >
+</p>
+
 
 <br>
 
