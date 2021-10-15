@@ -68,6 +68,13 @@
     >
 </p>
 
+## Exercívio 06
+<p>
+    <img  
+        align="center" height="400px" " 
+        src="./exercicio_06/demo.gif" alt="Demo"
+    >
+</p>
 
 <br>
 
