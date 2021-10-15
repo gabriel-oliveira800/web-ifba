@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <title>NodeJS</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Grid de Fotos</h1>
+        <a href="http://localhost:3000/contato">Contatos</a>
+    </header>
+
+    <main></main>
+    <script>
+        const main = document.querySelector('main');
+        const maxLengthItemsGenerated = 20;
+
+        const generateID = () => Math.round(Math.random() * 1000);
+
+        function init() {
+            for (let index = 0; index < maxLengthItemsGenerated; index++) {
+                createItems();
+            }
+        }
+
+        function createItems() {
+            const card = document.createElement('div');
+            const img = document.createElement('img');
+
+            img.alt = 'random image';
+            img.src = `https://source.unsplash.com/random?sig=${generateID()}`;
+            card.className = 'card';
+
+            const cardInfo = document.createElement('div');
+
+            const title = document.createElement('span');
+            const subtitle = document.createElement('p');
+
+            title.innerHTML = 'Unsplash Random Image';
+            subtitle.innerHTML = 'Very good quality';
+
+            cardInfo.append(title);
+            cardInfo.append(subtitle);
+            cardInfo.className = 'card_info';
+
+            card.append(img);
+            card.append(cardInfo);
+
+            main.append(card);
+        }
+
+        init();
+    </script>
+</body>
+
+</html>
